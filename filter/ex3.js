@@ -33,6 +33,12 @@ Expected OUTPUT for these sample arguments:
 */
 
 function filterOnPrice(products, maxPrice) {
+  const newArray = products.filter (price => {
+    if (price.price <= maxPrice) {
+      return price; 
+    }
+  }); 
+  return newArray; 
 }
 
 // DON'T TOUCH THIS!
